@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@900&family=Sedgwick+Ave&display=swap');
+
+
+body{
+  background-color:indianred !important;
+}
+.middle {
+  height: calc(50vh);
+}
+
+.search-container{
+  max-width: 500px;
+  margin:auto;
+}
