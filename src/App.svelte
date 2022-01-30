@@ -6,18 +6,25 @@
 <script>
 	import { Col, Container, Row, FormGroup, Input, Label } from 'sveltestrap';
 
-	import  Search  from './components/Search.svelte'
+	import SearchBar  from './components/SearchBar.svelte'
 	import AppContainer from './components/AppContainer.svelte'
+	import ResultsContainer from './components/ResultsContainer.svelte'
 
 	const COLORS = {
 		SUCCESS:100,
 		FAIL:0,
 		PENDING:180
 	}
+
+	function requestData(event){
+		console.log(event.detail);
+	}
+
 </script>
 
 <AppContainer>
-	<Search/>
+	<SearchBar on:requestData={requestData}/>
+	<ResultsContainer/>
 </AppContainer>
 
 <style>

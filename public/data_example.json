@@ -3,7 +3,7 @@
       "_id": "61f5ab10fbed3e030942dad6",
       "index": 0,
       "title": "aute",
-      "genger": "enim",
+      "gender": "enim",
       "declension": {
         "nominative": {
           "singular": "enim",
@@ -42,7 +42,7 @@
       "_id": "61f5ab101ea8e8971d0e51bd",
       "index": 1,
       "title": "Lorem",
-      "genger": "commodo",
+      "gender": "commodo",
       "declension": {
         "nominative": {
           "singular": "anim",
@@ -81,7 +81,7 @@
       "_id": "61f5ab108b02ba391fd9e57f",
       "index": 2,
       "title": "veniam",
-      "genger": "laboris",
+      "gender": "laboris",
       "declension": {
         "nominative": {
           "singular": "amet",
@@ -120,7 +120,7 @@
       "_id": "61f5ab10c93718bc6739f780",
       "index": 3,
       "title": "consequat",
-      "genger": "sit",
+      "gender": "sit",
       "declension": {
         "nominative": {
           "singular": "laborum",
@@ -159,7 +159,7 @@
       "_id": "61f5ab100d5c3eec81fe7333",
       "index": 4,
       "title": "id",
-      "genger": "esse",
+      "gender": "esse",
       "declension": {
         "nominative": {
           "singular": "qui",
@@ -198,7 +198,7 @@
       "_id": "61f5ab108a01751803e9d847",
       "index": 5,
       "title": "consectetur",
-      "genger": "anim",
+      "gender": "anim",
       "declension": {
         "nominative": {
           "singular": "incididunt",
