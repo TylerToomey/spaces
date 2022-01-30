@@ -1,5 +1,5 @@
 <script>
-    import { FormGroup, Row} from 'sveltestrap';
+    import { FormGroup, Row, Container} from 'sveltestrap';
     import { onMount, onDestroy } from 'svelte'
 
     import { placeholders, searchTerm }  from '../store.js'
@@ -24,18 +24,21 @@
     })
 
 </script>
-
-<Row class="d-flex h-100 align-items-end">
-    <FormGroup class="p-5" id="searchbar">
-        <input class="form-control"
-        type="search"
-        name="search"
-        id="exampleSearchs"
-        placeholder="{placeholder}"
-        bind:value={$searchTerm}
-        />
-    </FormGroup>
-</Row>
+<div class="search-container">
+    <Container class="container middle">
+        <Row class="d-flex h-100 align-items-end">
+            <FormGroup class="p-5" id="searchbar">
+                <input class="form-control"
+                type="search"
+                name="search"
+                id="exampleSearchs"
+                placeholder="{placeholder}"
+                bind:value={$searchTerm}
+                />
+            </FormGroup>
+        </Row>
+    </Container>
+</div>
 
 <style>
 </style>
