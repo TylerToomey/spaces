@@ -8,6 +8,7 @@
     const dispatch = createEventDispatcher();
 
     let index = 0;
+    let enabled = true;
 
     $:placeholder = "e.g " + $placeholders[index];
 
@@ -20,7 +21,7 @@
             index === PLACEHOLDER_LENGTH-1 ? index = 0 : index = index + 1 // Increments the index and resets to 0 at array bound
         },3900);
 
-        index = Math.round((Math.random()*PLACEHOLDER_LENGTH-1)) // Randomize the starting placeholder so it's not always the same
+        index = Math.ceil((Math.random()*PLACEHOLDER_LENGTH-1)) // Randomize the starting placeholder so it's not always the same
 
         return () => clearInterval(interval); // clears our interval timer onDestroy 
     })

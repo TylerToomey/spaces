@@ -4,8 +4,6 @@
 </svelte:head>
 
 <script>
-	import { Col, Container, Row, FormGroup, Input, Label } from 'sveltestrap';
-
 	import SearchBar  from './components/SearchBar.svelte'
 	import AppContainer from './components/AppContainer.svelte'
 	import ResultsContainer from './components/ResultsContainer.svelte'
