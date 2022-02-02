@@ -26,13 +26,16 @@
         return () => clearInterval(interval); // clears our interval timer onDestroy 
     })
 
-	function requestData(value) {
+    // Fires when Enter key or button pressed 
+    // TODO Error on incomplete search & disable form while searching?
+    // Maybe have the results auto populate
+	function requestData( value ) {
 		dispatch('requestData', {
             request : value
         });
 	}
 
-    function onKeyPress(key){
+    function onKeyPress( key ){
         key.code === 'Enter' ? requestData($searchTerm) : console.log("nada");
     }   
 
